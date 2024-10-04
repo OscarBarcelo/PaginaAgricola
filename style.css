@@ -1,11 +1,21 @@
-/* Style the header with a grey background and some padding */
+/* Style the navbar with a grey background and some padding */
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
 }
 
-/* Style the header links */
+#headerimg{
+  width: 100%;
+  margin: 0px;
+}
+
+.main-img{
+  width: 100%;
+  height: 800px;
+}
+
+/* Style the navbar links */
 .header a {
   float: left;
   color: black;
@@ -44,7 +54,7 @@ footer {
   color: white;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the navbar to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
