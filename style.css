@@ -53,6 +53,16 @@ table,td,th {
   border: 1px solid black;
 }
 
+.custom-select {
+  width: fit-content;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.custom-select select {
+ background-color: #f1f1f4;
+ border-radius: 10px;
+}
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
