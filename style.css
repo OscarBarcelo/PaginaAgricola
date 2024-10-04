@@ -72,12 +72,12 @@ footer {
 table,td,th {
   border: 1px solid black;
 }
-
+/* A custom selector style */
 .custom-select {
   width: fit-content;
   font-family: 'Courier New', Courier, monospace;
 }
-
+/* A custom select style with bg-color and border-radius*/
 .custom-select select {
  background-color: #f1f1f4;
  border-radius: 10px;
