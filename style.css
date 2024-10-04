@@ -1,4 +1,5 @@
 body {
+  padding: 25px 25px 25px 25px;
   font-family: Verdana;
   background-color:  #564f4f2d;
 }
@@ -11,6 +12,7 @@ body {
 }
 
 #headerimg{
+  text-align: center;
   width: 100%;
   margin: 0px;
 }
@@ -53,10 +55,15 @@ body {
 }
 
 footer {
+  margin-top: 20px;
   text-align: center;
   padding: 3px;
-  background-color: DarkSalmon;
+  background-color: #5555554b;
   color: white;
+}
+
+.header {
+  background: none;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the navbar to increase when the font gets bigger */
@@ -114,6 +121,12 @@ tr:hover {
 .custom-select select {
  background-color: #f1f1f4;
  border-radius: 10px;
+} 
+
+#headerimg img {
+  border-radius: 15px ;
+  height: 500px;
+  width: 95%;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
