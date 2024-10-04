@@ -6,12 +6,15 @@ body {
 
 /* Style the navbar with a grey background and some padding */
 .header {
+  display: flex;
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
+  justify-content: space-between;
 }
 
 #headerimg{
+  align-self: center;
   text-align: center;
   width: 100%;
   margin: 0px;
