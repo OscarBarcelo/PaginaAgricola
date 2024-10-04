@@ -15,9 +15,17 @@
           <a href="#contact">Contact</a>
           <a href="#about">About</a>
         </div>
+        <!-- Inicio de desplegable de idiomas-->
+        <div class="custom-select">
+          <select name="language-selector">
+            <option value="spanish">Español</option>
+            <option value="english">English</option>
+          </select>
+        </div>
       </div>
     </header>
     <div id="content">
+      <!-- Inicio de tabla-->
       <table>
         <caption>Productos</caption>
         <tr>
@@ -51,17 +59,24 @@
             <td>3€/Kg</td>
         </tr>
     </table>
-    <div>      
-    <div> <!-- Información de contacto -->
+      <div>  <!--Información de contacto -->
         <h2>Contacta con nosotros!</h2>
         <p><b>Telefono:</b> 971222333</p>
         <p><b>Emergencias:</b> +34 22233355</p>
         <p><b>Dirección:</b> C\ La calle de la empresa nº2 bajos</p>
         <p><b>Dirección de correo:</b> correoinventado@agricola.es</p>
-    </div>
-    <div> <!-- Historia de la empresa -->
+        </div>
+
+        <div> <!--Historia de la empresa -->
         <h2>Conoce nuestra historia!</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus Ut etiam sit amet nisl purus in mollis nunc sed id semper risus Semper risus in hendrerit gravida rutrum quisque non tellus orci Mattis rhoncus urna neque viverra justo nec ultrices dui sapien Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus Ut etiam sit amet nisl purus in mollis nunc sed id semper risus Semper risus in hendrerit gravida rutrum quisque non tellus orci Mattis rhoncus urna neque viverra justo nec ultrices dui sapien Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus Ut etiam sit amet nisl purus in mollis nunc sed id semper risus Semper risus in hendrerit gravida rutrum quisque non tellus orci Mattis rhoncus urna neque viverra justo nec ultrices dui sapien Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus Ut etiam sit amet nisl purus in mollis nunc sed id semper risus Semper risus in hendrerit gravida rutrum quisque non tellus orci Mattis rhoncus urna neque viverra justo nec ultrices dui sapien</p>
+
+        </div>
+      
+      <!--Botón para subir arriba-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <!--Footer-->
+
     </div>
 
     <div> <!--Formulario de contacto-->
@@ -82,7 +97,7 @@
         </form>
     </div>
     
-    <div>
+    <div class="ofertas">
         <table>
             <caption>Ofertas</caption>
             <tr>
@@ -115,6 +130,26 @@
       <footer>
         <p>Author: Hege Refsnes</p>
         <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-      </footer> 
+      </footer>
+
+      <!--script para el botón de subir-->
+      <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 </html>
